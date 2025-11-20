@@ -108,6 +108,8 @@ int playGame() {
         return 0;
     }
 }
+
+
 int main(int argc, char const *argv[])
 {
     playGame();
