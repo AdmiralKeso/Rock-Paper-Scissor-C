@@ -37,6 +37,21 @@ int playGame() {
     if(playerChoice > 3 || playerChoice < 1) {
         printf("\n\nPlease write a number between 1-3");
         printf("\n\n--------------------------------------------");
+        continue;
+    } else {
+    switch(computerChoice) {
+        case 1:
+        printf("Computer picked: ROCK\n");
+        break;
+
+        case 2:
+        printf("Computer picked: PAPER\n");
+        break;
+
+        case 3:
+        printf("Computer picked: SCISSORS\n");
+        break;
+    }}
 int main(int argc, char const *argv[])
 {
     playGame();
