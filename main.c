@@ -93,6 +93,19 @@ int playGame() {
         getchar() != '\n';
         break;
     }
+    int playAgain;
+
+    printf("\n\nDo you wanna play again?");
+    printf("\n1 - Yes\n2 - No\n\n");
+    scanf("%i", &playAgain);
+
+    if(playAgain == 1) {
+        playGame();
+    }
+    else {
+        return 0;
+    }
+}
 int main(int argc, char const *argv[])
 {
     playGame();
