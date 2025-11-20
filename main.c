@@ -16,6 +16,9 @@ int playGame() {
     printf("3 - Scissors\n\n");
     scanf("%i", &playerChoice);
 
+    srand(time(NULL));
+    computerChoice = rand()%2 + 1;
+
 int main(int argc, char const *argv[])
 {
     playGame();
