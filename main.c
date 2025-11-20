@@ -33,6 +33,10 @@ int playGame() {
         printf("\nYou picked: SCISSORS\n");
         break;
     }
+
+    if(playerChoice > 3 || playerChoice < 1) {
+        printf("\n\nPlease write a number between 1-3");
+        printf("\n\n--------------------------------------------");
 int main(int argc, char const *argv[])
 {
     playGame();
