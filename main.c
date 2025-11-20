@@ -52,6 +52,36 @@ int playGame() {
         printf("Computer picked: SCISSORS\n");
         break;
     }}
+
+    if(playerChoice == computerChoice) {
+        printf("\nDraw");
+        printf("\nYour score: %i", playerScore);
+        printf("\nComputer score: %i", computerScore);
+    }
+    else if(playerChoice == 1 && computerChoice == 3) {
+        printf("\nGood job!");
+        playerScore++;
+        printf("\nYour score: %i", playerScore);
+        printf("\nComputer score: %i", computerScore);
+    }
+    else if(playerChoice == 2 && computerChoice == 1) {
+        printf("\nWe have a winner here!");
+        playerScore++;
+        printf("\nYour score: %i", playerScore);
+        printf("\nComputer score: %i", computerScore);
+    }
+    else if(playerChoice == 3 && computerChoice == 2) {
+        printf("\nWINNER WINNER, Chicken dinner!");
+        playerScore++;
+        printf("\nYour score: %i", playerScore);
+        printf("\nComputer score: %i", computerScore);
+    }
+    else {
+        printf("\nYou loose");
+        computerScore++;
+        printf("\nYour score: %i", playerScore);
+        printf("\nComputer score: %i", computerScore);
+    }
 int main(int argc, char const *argv[])
 {
     playGame();
