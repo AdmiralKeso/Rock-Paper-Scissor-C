@@ -20,6 +20,19 @@ int playGame() {
     computerChoice = rand()%2 + 1;
 
     printf("\n--------------------------------------------");
+    switch(playerChoice) {
+        case 1:
+        printf("\nYou picked: ROCK\n");
+        break;
+
+        case 2:
+        printf("\nYou picked: PAPER\n");
+        break;
+
+        case 3:
+        printf("\nYou picked: SCISSORS\n");
+        break;
+    }
 int main(int argc, char const *argv[])
 {
     playGame();
