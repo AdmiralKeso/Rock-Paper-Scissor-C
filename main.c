@@ -93,6 +93,8 @@ int playGame() {
         getchar() != '\n';
         break;
     }
+    printf("\n--------------------------------------------");
+}
     int playAgain;
 
     printf("\n\nDo you wanna play again?");
