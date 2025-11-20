@@ -19,6 +19,7 @@ int playGame() {
     srand(time(NULL));
     computerChoice = rand()%2 + 1;
 
+    printf("\n--------------------------------------------");
 int main(int argc, char const *argv[])
 {
     playGame();
