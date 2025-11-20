@@ -82,6 +82,17 @@ int playGame() {
         printf("\nYour score: %i", playerScore);
         printf("\nComputer score: %i", computerScore);
     }
+
+    if(playerScore == 5) {
+        printf("\n\nYou won the game! Thanks for playing!");
+        getchar() != '\n';
+        break;
+    }
+    else if(computerScore == 5){
+        printf("\n\nYou loose! Thanks for playing!");
+        getchar() != '\n';
+        break;
+    }
 int main(int argc, char const *argv[])
 {
     playGame();
