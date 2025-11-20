@@ -8,6 +8,14 @@ int playGame() {
     int playerScore = 0;
     int computerScore = 0;
     int message;
+
+    while(1) {
+    printf("\nPlease pick rock, paper or scissors. \n\n");
+    printf("1 - Rock\n");
+    printf("2 - Paper\n");
+    printf("3 - Scissors\n\n");
+    scanf("%i", &playerChoice);
+
 int main(int argc, char const *argv[])
 {
     playGame();
